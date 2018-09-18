@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drum Machine!</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" href="./css/drum.css">
+    <script src="./js/drum.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="drum-machine">
+      <div id="sequencer">
+        <div class="res-row">
+          <div class="seq-key">
+            <div class="key key-select" id="0" data-index="0"></div>
+          </div>
+          <div class="seq-key">
+            <div class="key" id="1" data-index="1"></div>
+          </div>
+          <div class="seq-key" >
+            <div class="key" id="2" data-index="2"></div>
+          </div>
+          <div class="seq-key" >
+            <div class="key" id="3" data-index="3"></div>
+          </div>
+        </div>
+        <div class="res-row">
+          <div class="seq-key">
+            <div class="key" id="4" data-index="4"></div>
+          </div>
+          <div class="seq-key">
+            <div class="key" id="5" data-index="5"></div>
+          </div>
+          <div class="seq-key">
+            <div class="key" id="6" data-index="6"></div>
+          </div>
+          <div class="seq-key">
+            <div class="key" id="7" data-index="7"></div>
+          </div>
+        </div>
+        <div class="res-row">
+          <div class="seq-key">
+            <div class="key key-select" id="8" data-index="8"></div>
+          </div>
+          <div class="seq-key">
+            <div class="key" id="9" data-index="9"></div>
+          </div>
+          <div class="seq-key" >
+            <div class="key" id="10" data-index="10"></div>
+          </div>
+          <div class="seq-key" >
+            <div class="key" id="11" data-index="11"></div>
+          </div>
+        </div>
+        <div class="res-row">
+          <div class="seq-key">
+            <div class="key" id="12" data-index="12"></div>
+          </div>
+          <div class="seq-key">
+            <div class="key" id="13" data-index="13"></div>
+          </div>
+          <div class="seq-key">
+            <div class="key" id="14" data-index="14"></div>
+          </div>
+          <div class="seq-key">
+            <div class="key" id="15" data-index="15"></div>
+          </div>
+        </div>
+      </div> <!-- sequencer -->
+      <div class="column">
+        <div id="drum-selector">
+          <div class="tempo">DRUM MACHINE</div>
+          <button id="kick" class ="drum-select" data-drum="1">KICK</button>
+          <button id="snare" data-drum="2">SNARE</button>
+          <button id="hat" data-drum="3">HI-HAT</button>
+        </div>
+        <div id="controls">
+          <button id="play" class="pulse">PLAY</button>
+          <button id="stop">STOP</button>
+        </div>
+      </div>
+      <audio src="audio/kick-strong.wav" data-note="1a"></audio>
+      <audio src="audio/kick-weak.wav" data-note="1b"></audio>
+      <audio src="audio/snare-strong.wav" data-note="2a"></audio>
+      <audio src="audio/snare-weak.wav" data-note="2b"></audio>
+      <audio src="audio/hat-strong.wav" data-note="3a"></audio>
+      <audio src="audio/hat-weak.wav" data-note="3b"></audio>
+    </div> <!-- Drum Machine -->
+  </body>
+</html>

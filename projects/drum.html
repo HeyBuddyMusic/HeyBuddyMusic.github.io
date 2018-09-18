@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marcel Hamel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <meta name="sailthru.author" content="Marcel Hamel" />
+    <meta name="sailthru.date" content="2017-01-31 10:30:00" />
+    <meta name="sailthru.title" content="DrumScript" />
+    <meta name="sailthru.description" content="A drum machine built with 'vanilla' Javascript, HTML5 and CSS3." />
+    <meta name="sailthru.tags" content="code,JavaScript,HTML5,CSS3" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="../js/main.js" type="text/javascript"></script>
+    <script src="https://ak.sail-horizon.com/spm/spm.v1.min.js"></script>
+    <script>Sailthru.init({ customerId: '9b2ea4ff453783e1728719ee4defc6cc' });</script>
+  </head>
+
+  <body>
+    <nav>
+      <img src="../images/marcel.jpg" id="nav-img">
+      <div class="nav-link-container">
+        <a href="#work"><span class="nav-link" id="nav-work">WORK</span></a>
+        <a href="#about"><span class="nav-link" id="nav-about">ABOUT</span></a>
+        <!-- <a href="#contact"><span class="nav-link" id="nav-contact">CONTACT</span></a> -->
+        <a href="music.html"><span class="nav-link" id="nav-music">MUSIC</span></a>
+      </div>
+      <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </nav>
+
+    <main>
+      <section class="project-banner" id="drum">
+        <div class="project-banner-overlay">
+          <h1>DrumScript</h1>
+        </div>
+      </section>
+      <section class="project-content">
+        <h3 class="project-title">A tiny javascript drum machine.</h3>
+        <p>As a student in General Assembly's web development immersive, one of our first projects was to create a game using CSS, HTML and DOM manipulation via "vanilla" JavaScript. My project was a rhythm dictation game- something of a variation on "Simon".</p>
+        <h3 class="project-title">Challenges</h3>
+        <p>The challenge we faced was finding the right criteria to use to exclude restaurants by category. We decided that the greatest challenge was to let the user say, something to the effect of, "I don't want italian food tonight." We also had to account for a user who rejected all possible options around them.</p>
+        <h3 class="project-title">Solution</h3>
+        <p>Diving into Yelp's "Fusion API" revealed that each restaurant was assigned tags based on the type of food and drink they served (e.g. "Bars, American (Traditional)"). We decided to have the app present the user with the option to either say that they didn't like the individual restaurant or they didn't like the type of food presented to them. To implement this, we had Yelp retrieve the 50 closest restaurants to the user's position and stash them in local storgae. Each time one was selected at random, it would check to see if either the title or any categories were selected and move on to another if either criteria were met. We also set the app up to admonish the user for being whiny if they had exhausted all possible options.</p>
+        <h3 class="project-title">Did It Work?</h3>
+        <p>Sort of. The app functions great with a large sample size of restaurants- the sort of thing that a major city like NYC is great for. I handed it my hometown in rural Maine out of curiosity and ended up being scolded by the app after turning down all five options handed to me.</p>
+        <h3 class="project-title">What would you do differently?</h3>
+        <p>Given more time, it would be nice to include other exclusionary features. These might be things like giving the user an option of specifying how far they're willing to travel. Otherwise, I'm not only happy with it, I actually use this pretty consistently, which is the nicest thing that I can say about anything I've built!</p>
+        <h3 class="project-title">Check It Out!</h3>
+        <div class="project-link-buttons">
+          <a href="">
+            <button class="git-btn">Github</button>
+          </a>
+          <a href="">
+            <button class="demo-btn">Demo</button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="https://github.com/MarcelHamel" id="github">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/marcelhamel/" id="linkedin">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PL-4HX5kEqqnj9TZDe8hfX6gxTVhDrNk3D" id="youtube">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+        <a href="https://soundcloud.com/marcel-hamel-970400644/sets/bass-samples" id="soundcloud">
+          <i class="fa fa-soundcloud" aria-hidden="true"></i>
+        </a>
+      </div>
+      <p>2017 &#9400; Marcel Hamel. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
